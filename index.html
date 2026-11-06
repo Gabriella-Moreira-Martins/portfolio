@@ -1,0 +1,1089 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gabriella Moreira Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Gabriella Moreira Martins: Relações Públicas, Analista de Comunicação e Copywriter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticker-scrapbook. A cream "paper" page with coral blocks, chunky brown outlines,
+   grain, halftone sparkles and an original hand-drawn bunny mascot that follows you around. */
+:root{
+  --paper:#FBF3E9; --paper-2:#F6E6D8; --ink:#3B2420; --ink-soft:#6E4E47;
+  --coral:#EE8582; --coral-deep:#DB5F63; --blush:#F7C3C3; --sky:#AFD6EE; --mint:#BFE3B0; --butter:#F8DE8A;
+  --card:#FFFDF8; --line:#3B2420;
+  --f-display:"Bagel Fat One","Arial Rounded MT Bold","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-hand:"Caveat","Bradley Hand","Comic Sans MS",cursive;
+  --f-mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:22px; --bw:3px; --shadow:5px 5px 0 var(--line);
+  --gutter-l:max(16px, env(safe-area-inset-left, 0px)); --gutter-r:max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#2B1C1A; --paper-2:#36231F; --ink:#FBEDE3; --ink-soft:#D8BDB3;
+  --coral:#F08E8B; --coral-deep:#F26E71; --blush:#7A3E44; --sky:#4F7891; --mint:#56775A; --butter:#8E7434;
+  --card:#3A2622; --line:#120A09; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#2B1C1A; --paper-2:#36231F; --ink:#FBEDE3; --ink-soft:#D8BDB3;
+  --coral:#F08E8B; --coral-deep:#F26E71; --blush:#7A3E44; --sky:#4F7891; --mint:#56775A; --butter:#8E7434;
+  --card:#3A2622; --line:#120A09; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;overflow-x:hidden;transition:background .5s,color .5s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.13;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .23 0 0 0 0 .14 0 0 0 0 .12 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+:root[data-theme="dark"] body::after{mix-blend-mode:screen;opacity:.06}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body::after{mix-blend-mode:screen;opacity:.06}}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px dashed var(--coral-deep);outline-offset:4px;border-radius:8px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+.hand{font-family:var(--f-hand);font-weight:700}
+.mono{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- loader ---------- */
+#loader{position:fixed;inset:0;z-index:100;background:var(--coral);display:grid;place-items:center;transition:transform .8s cubic-bezier(.7,0,.2,1)}
+#loader.done{transform:translateY(-105%)}
+#loader .lb{width:120px;animation:hop .55s ease-in-out infinite alternate}
+#loader .count{font-family:var(--f-display);font-size:3.2rem;color:var(--paper);-webkit-text-stroke:2px var(--line);text-shadow:4px 4px 0 var(--line);text-align:center}
+#loader .msg{font-family:var(--f-hand);font-size:1.5rem;color:var(--line);text-align:center}
+@keyframes hop{from{transform:translateY(6px) scaleY(.94)}to{transform:translateY(-22px) scaleY(1.03)}}
+
+/* ---------- cursor ---------- */
+.cursor{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--coral-deep);border:2px solid var(--line);pointer-events:none;z-index:95;transform:translate(-50%,-50%);transition:width .2s,height .2s,background .2s;mix-blend-mode:normal}
+.cursor.big{width:54px;height:54px;background:color-mix(in srgb,var(--coral) 45%,transparent)}
+.spark{position:fixed;pointer-events:none;z-index:94;width:14px;height:14px;animation:sparkfade .7s ease-out forwards}
+@keyframes sparkfade{to{transform:translate(var(--dx),var(--dy)) scale(0) rotate(90deg);opacity:0}}
+@media (hover:none),(pointer:coarse){.cursor{display:none}}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;padding-block:12px}
+.nav .bar{display:flex;align-items:center;gap:10px;justify-content:space-between;background:var(--card);border:var(--bw) solid var(--line);border-radius:999px;padding:8px 8px 8px 18px;box-shadow:var(--shadow)}
+.logo{font-family:var(--f-display);font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.logo span{color:var(--coral-deep)}
+.links{display:flex;gap:4px;flex-wrap:wrap}
+.links a{text-decoration:none;font-weight:600;padding:6px 14px;border-radius:999px;transition:background .2s,transform .2s}
+.links a:hover{background:var(--blush);transform:rotate(-3deg)}
+.tools{display:flex;gap:8px;align-items:center}
+.lang{display:flex;border:var(--bw) solid var(--line);border-radius:999px;overflow:hidden;background:var(--paper)}
+.lang button{border:0;background:transparent;padding:5px 11px;font-family:var(--f-mono);font-weight:500;font-size:.8rem}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.lamp{width:44px;height:44px;border:var(--bw) solid var(--line);border-radius:50%;background:var(--butter);display:grid;place-items:center;padding:0;transition:transform .3s}
+.lamp:hover{transform:rotate(-14deg)}
+.lamp svg{width:24px;height:24px}
+.burger{display:none}
+@media (max-width:860px){
+  .hide-sm{display:none}
+  .links{display:none}
+  .links.open{display:flex;position:absolute;top:calc(100% + 4px);left:var(--gutter-l);right:var(--gutter-r);flex-direction:column;background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--r);padding:10px;box-shadow:var(--shadow)}
+  .burger{display:grid;place-items:center;width:44px;height:44px;border:var(--bw) solid var(--line);border-radius:50%;background:var(--blush);padding:0}
+  .nav .wrap{position:relative}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding-block:28px 40px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:5px 14px 5px 10px;font-size:.9rem;font-weight:600}
+.status i{width:10px;height:10px;border-radius:50%;background:#4DB36A;box-shadow:0 0 0 0 #4DB36A;animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px transparent}}
+.hi{font-size:2.1rem;margin-top:18px;color:var(--ink-soft);transform:rotate(-3deg);display:inline-block}
+.name{font-family:var(--f-display);font-weight:400;font-size:clamp(3.6rem,11.5vw,9.4rem);line-height:.86;color:var(--coral);-webkit-text-stroke:3px var(--line);paint-order:stroke fill;text-shadow:6px 7px 0 var(--line);letter-spacing:-.01em;margin-block:4px 18px}
+.name .ln{display:block;white-space:nowrap}
+.name .ch{display:inline-block;animation:drop .9s cubic-bezier(.3,1.6,.5,1) backwards;transition:transform .25s}
+.name .ch:hover{transform:translateY(-14px) rotate(-8deg);color:var(--sky)}
+@keyframes drop{from{transform:translateY(-120px) rotate(-20deg)}}
+.tagline{font-size:clamp(1.25rem,2.6vw,1.75rem);font-weight:600;line-height:1.3;max-width:28ch}
+.rot{display:inline-grid;vertical-align:bottom;position:relative}
+.rot span{grid-area:1/1;background:var(--sky);border:2px solid var(--line);border-radius:12px;padding:0 10px;transform:rotate(-2deg);transition:transform .45s cubic-bezier(.3,1.6,.5,1),opacity .3s;opacity:0;transform-origin:left bottom;white-space:nowrap}
+.rot span.on{opacity:1;transform:rotate(-2deg)}
+.rot span.out{opacity:0;transform:translateY(-30px) rotate(-12deg)}
+.rot span:not(.on):not(.out){transform:translateY(30px) rotate(8deg)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;border:var(--bw) solid var(--line);border-radius:999px;padding:12px 22px;background:var(--coral);color:#2B1714;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px) rotate(-1.5deg);box-shadow:7px 7px 0 var(--line)}
+.btn:active{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--line)}
+.btn.alt{background:var(--card);color:var(--ink)}
+
+.photo-zone{position:relative;justify-self:center;width:min(100%,430px);aspect-ratio:4/5;max-width:100%}
+.blob{position:absolute;inset:6% 2% 4% 4%;background:var(--coral);border:var(--bw) solid var(--line);border-radius:46% 54% 40% 60%/55% 45% 55% 45%;animation:morph 9s ease-in-out infinite alternate;overflow:hidden}
+.blob::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,var(--coral-deep) 1.6px,transparent 2px) 0 0/11px 11px;opacity:.55}
+@keyframes morph{50%{border-radius:58% 42% 56% 44%/42% 60% 40% 58%}100%{border-radius:40% 60% 46% 54%/60% 40% 60% 40%}}
+.me{position:absolute;left:50%;bottom:4%;width:78%;transform:translateX(-50%);filter:grayscale(1) contrast(1.15) brightness(1.05) drop-shadow(5px 5px 0 var(--line));mix-blend-mode:normal}
+.me-tint{position:absolute;inset:0;pointer-events:none}
+.sticker{position:absolute;z-index:3;font-family:var(--f-body);font-weight:800;font-size:clamp(.85rem,1.6vw,1.1rem);padding:8px 14px;border:2px solid var(--line);background:var(--blush);color:#3B2420;box-shadow:3px 3px 0 var(--line);cursor:grab;user-select:none;touch-action:none;white-space:nowrap}
+.sticker:active{cursor:grabbing}
+.sticker.s1{top:8%;left:-6%;transform:rotate(-8deg)}
+.sticker.s2{top:44%;right:-8%;transform:rotate(6deg);background:var(--sky)}
+.sticker.s3{bottom:10%;left:-10%;transform:rotate(4deg);background:var(--mint)}
+.sticker::before{content:"";position:absolute;top:-10px;left:50%;width:44px;height:16px;background:color-mix(in srgb,var(--butter) 75%,transparent);transform:translateX(-50%) rotate(-4deg);border-left:1px dashed rgba(0,0,0,.2);border-right:1px dashed rgba(0,0,0,.2)}
+.peek{position:absolute;right:-4%;bottom:-6%;width:34%;z-index:4;transform-origin:bottom center;animation:peek 4s ease-in-out infinite}
+@keyframes peek{0%,100%{transform:translateY(8px) rotate(-4deg)}50%{transform:translateY(-6px) rotate(5deg)}}
+.hand-note{position:absolute;z-index:4;font-family:var(--f-hand);font-size:1.45rem;font-weight:700;color:var(--ink);line-height:1.05}
+.hand-note.n1{top:-2%;right:4%;transform:rotate(7deg)}
+.hand-note svg{width:60px;height:40px;display:block}
+.star{position:absolute;pointer-events:none;z-index:2}
+.star svg{width:100%;height:100%;display:block}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px) rotate(14deg)}}
+@media (max-width:860px){
+  .hide-sm{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .photo-zone{width:min(100%,360px);margin-top:8px}
+  .sticker.s1{left:0}.sticker.s2{right:0}.sticker.s3{left:0}
+}
+
+/* ---------- clouds / marquee ---------- */
+.clouds{display:block;width:100%;height:90px;margin-bottom:-2px}
+.marquee{background:var(--ink);color:var(--paper);border-block:var(--bw) solid var(--line);overflow:hidden;padding-block:14px;transform:rotate(-1.2deg);margin-inline:-20px}
+.marquee.pink{background:var(--coral);color:#2B1714;transform:rotate(1.2deg)}
+.track{display:flex;width:max-content;gap:28px;animation:scroll 32s linear infinite}
+.marquee.rev .track{animation-direction:reverse}
+.marquee:hover .track{animation-play-state:paused}
+.track span{font-family:var(--f-display);font-size:clamp(1.3rem,3vw,2.1rem);white-space:nowrap;display:flex;align-items:center;gap:28px}
+.track svg{width:26px;height:26px;flex:none}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- section scaffold ---------- */
+section{position:relative}
+.sec{padding-block:96px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:4px 14px}
+.h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2.6rem,6.5vw,5rem);line-height:.95;margin-top:14px;color:var(--ink)}
+.h2 em{font-style:normal;color:var(--coral);-webkit-text-stroke:2px var(--line);paint-order:stroke fill;text-shadow:4px 4px 0 var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:44px}
+.sec-head .note{font-family:var(--f-hand);font-size:1.6rem;max-width:22ch;transform:rotate(-2deg);color:var(--ink-soft)}
+.pop{transition:transform .7s cubic-bezier(.3,1.5,.5,1)}
+.pop.pre{transform:translateY(46px) rotate(-2deg) scale(.96)}
+
+/* ---------- about ---------- */
+.about{background:var(--paper-2);border-block:var(--bw) solid var(--line);
+  background-image:linear-gradient(90deg,color-mix(in srgb,var(--blush) 45%,transparent) 50%,transparent 50%),linear-gradient(color-mix(in srgb,var(--blush) 45%,transparent) 50%,transparent 50%);background-size:46px 46px}
+.about-grid{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:56px;align-items:start}
+.idcard{perspective:1200px;width:100%;max-width:360px;justify-self:center;cursor:pointer;background:none;border:0;padding:0;text-align:left}
+.idcard .in{position:relative;transition:transform .9s cubic-bezier(.3,1.3,.5,1);transform-style:preserve-3d;aspect-ratio:5/7.4}
+.idcard.flip .in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:var(--bw) solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.face.back{transform:rotateY(180deg);background:var(--sky);padding:24px;gap:12px}
+.lanyard{position:absolute;top:-70px;left:50%;width:26px;height:80px;transform:translateX(-50%);background:repeating-linear-gradient(45deg,var(--coral) 0 8px,var(--coral-deep) 8px 16px);border:2px solid var(--line);border-bottom:0;z-index:-1}
+.idcard-wrap{padding-top:70px;display:grid;justify-items:center;animation:swing 5s ease-in-out infinite;transform-origin:top center}
+@keyframes swing{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.id-top{background:var(--coral);border-bottom:var(--bw) solid var(--line);padding:16px 18px 12px;display:flex;justify-content:space-between;align-items:center;color:#2B1714}
+.id-top b{font-family:var(--f-display);font-weight:400;font-size:1.3rem}
+.id-hole{width:56px;height:12px;border-radius:99px;background:var(--paper);border:2px solid var(--line)}
+.id-photo{margin:16px auto 8px;width:58%;aspect-ratio:1;border-radius:50%;border:var(--bw) solid var(--line);background:var(--blush);overflow:hidden;position:relative}
+.id-photo img{position:absolute;left:50%;top:6%;width:120%;max-width:none;transform:translateX(-50%);filter:grayscale(1) contrast(1.1)}
+.id-body{padding:4px 18px 16px;text-align:center;display:grid;gap:4px}
+.id-body h3{font-family:var(--f-display);font-weight:400;font-size:1.55rem;line-height:1}
+.barcode{height:34px;margin:auto 18px 14px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 7px,transparent 7px 9px,var(--ink) 9px 10px,transparent 10px 13px)}
+.flip-hint{font-family:var(--f-hand);font-size:1.35rem;text-align:center;margin-top:16px}
+.back h3{font-family:var(--f-display);font-weight:400;font-size:1.5rem;color:#22323C}
+.back ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:#22323C;font-weight:600;font-size:.98rem}
+.back li{display:flex;gap:10px;align-items:flex-start}
+.back li svg{flex:none;width:18px;height:18px;margin-top:3px}
+.bio p{font-size:clamp(1.1rem,1.8vw,1.32rem);max-width:56ch;margin-top:18px}
+.bio p strong{background:linear-gradient(transparent 58%,var(--blush) 58%);font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}
+.stat{background:var(--card);border:var(--bw) solid var(--line);border-radius:18px;padding:16px;box-shadow:4px 4px 0 var(--line);transition:transform .25s}
+.stat:nth-child(odd){transform:rotate(-1.5deg)}.stat:nth-child(even){transform:rotate(1.5deg)}
+.stat:hover{transform:rotate(0) scale(1.05)}
+.stat b{font-family:var(--f-display);font-weight:400;font-size:2.3rem;line-height:1;display:block;color:var(--coral-deep);font-variant-numeric:tabular-nums}
+.stat span{font-size:.92rem;line-height:1.3;display:block;margin-top:6px}
+.kit{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;align-items:center}
+.kit .chip{border:2px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--card);font-weight:600;font-size:.9rem;transition:transform .2s,background .2s}
+.kit .chip:hover{transform:translateY(-4px) rotate(-4deg);background:var(--butter)}
+@media (max-width:860px){.about-grid{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- playlist (skills) ---------- */
+.player{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:center;background:var(--coral);border:var(--bw) solid var(--line);border-radius:32px;padding:clamp(20px,4vw,48px);box-shadow:8px 8px 0 var(--line);position:relative;overflow:hidden}
+.player::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.35) 1.5px,transparent 2px) 0 0/16px 16px;pointer-events:none}
+.deck{position:relative;aspect-ratio:1;width:100%;max-width:440px;justify-self:center}
+.vinyl{position:absolute;inset:4%;border-radius:50%;border:var(--bw) solid var(--line);
+  background:radial-gradient(circle at 50% 50%,transparent 0 30%,#2A1A18 30.5%),repeating-radial-gradient(circle,#3A2522 0 2px,#22150F 2px 4px);
+  box-shadow:6px 6px 0 var(--line);animation:spin 3.2s linear infinite;animation-play-state:paused}
+.vinyl.playing{animation-play-state:running}
+.vinyl::after{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 30deg,transparent 0 15%,rgba(255,255,255,.14) 18%,transparent 24% 60%,rgba(255,255,255,.1) 64%,transparent 70%)}
+.label{position:absolute;inset:30%;border-radius:50%;background:var(--butter);border:2px solid var(--line);display:grid;place-items:center;text-align:center;padding:10px;color:#2B1714}
+.label b{font-family:var(--f-display);font-weight:400;font-size:clamp(.9rem,2.2vw,1.25rem);line-height:1}
+.label::after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--line);left:50%;top:50%;transform:translate(-50%,-50%)}
+.label .lt{margin-top:-28px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.arm{position:absolute;top:-4%;right:-2%;width:44%;transform-origin:85% 10%;transform:rotate(-28deg);transition:transform .8s cubic-bezier(.3,1.4,.5,1);z-index:2}
+.arm.on{transform:rotate(2deg)}
+.tracklist h3{font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,4.5vw,3.2rem);color:var(--paper);-webkit-text-stroke:2px #3B2420;paint-order:stroke fill;text-shadow:4px 4px 0 #3B2420;line-height:1}
+.tracklist .sub{font-family:var(--f-hand);font-size:1.5rem;color:#3B2420;margin:4px 0 16px}
+.tracks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.tracks button{width:100%;display:grid;grid-template-columns:2.4rem minmax(0,1fr) auto;gap:10px;align-items:center;text-align:left;background:#FBF3E9;color:#3B2420;border:2px solid #3B2420;border-radius:14px;padding:10px 14px;font-weight:700;transition:transform .2s,background .2s}
+.tracks button:hover{transform:translateX(6px)}
+.tracks button[aria-pressed="true"]{background:#3B2420;color:#FBF3E9}
+.tracks .no{font-family:var(--f-mono);font-size:.85rem}
+.tracks .du{font-family:var(--f-mono);font-size:.8rem;opacity:.75}
+.eq{display:inline-flex;gap:2px;align-items:end;height:14px;margin-left:8px;vertical-align:middle}
+.eq i{width:3px;background:currentColor;animation:eq .6s ease-in-out infinite alternate}
+.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{from{height:3px}to{height:14px}}
+.tracks button:not([aria-pressed="true"]) .eq{display:none}
+.liner{margin-top:16px;background:#FBF3E9;color:#3B2420;border:2px dashed #3B2420;border-radius:16px;padding:14px 16px;min-height:7.5em}
+.liner p{font-size:1rem}
+.liner .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.liner .tags span{font-family:var(--f-mono);font-size:.72rem;border:1.5px solid #3B2420;border-radius:99px;padding:2px 9px;background:#F7C3C3}
+@media (max-width:860px){.player{grid-template-columns:minmax(0,1fr)}.deck{max-width:300px}}
+
+/* ---------- work ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.filters button{border:2px solid var(--line);background:var(--card);border-radius:999px;padding:7px 16px;font-weight:700;transition:transform .2s,background .2s}
+.filters button:hover{transform:rotate(-3deg)}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.card{position:relative;text-align:left;background:none;border:0;padding:0;transition:transform .35s cubic-bezier(.3,1.5,.5,1),opacity .3s}
+.card:nth-child(3n+1){transform:rotate(-1.6deg)}.card:nth-child(3n+2){transform:rotate(1.2deg)}.card:nth-child(3n){transform:rotate(-.6deg)}
+.card:hover{transform:rotate(0) translateY(-8px) scale(1.02);z-index:2}
+.card.hide{display:none}
+.stamp{background:var(--card);padding:12px;filter:drop-shadow(4px 4px 0 var(--line));
+  -webkit-mask:radial-gradient(circle 7px at 50% 0,transparent 98%,#000) 0 0/22px 51% repeat-x,radial-gradient(circle 7px at 50% 100%,transparent 98%,#000) 0 100%/22px 51% repeat-x;
+  mask:radial-gradient(circle 7px at 50% 0,transparent 98%,#000) 0 0/22px 51% repeat-x,radial-gradient(circle 7px at 50% 100%,transparent 98%,#000) 0 100%/22px 51% repeat-x}
+.stamp-in{border:2px solid var(--line);border-radius:6px;overflow:hidden;background:var(--paper-2)}
+.cover{aspect-ratio:4/3.3;position:relative;overflow:hidden;border-bottom:2px solid var(--line);display:grid;place-items:center}
+.cover img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .cover img{transform:scale(1.07) rotate(1deg)}
+.cover .big{font-family:var(--f-display);font-size:clamp(3rem,6vw,4.6rem);line-height:.9;color:var(--paper);-webkit-text-stroke:2px #3B2420;paint-order:stroke fill;text-shadow:4px 4px 0 #3B2420;text-align:center}
+.cover .big small{display:block;font-family:var(--f-hand);font-size:1.3rem;-webkit-text-stroke:0;text-shadow:none;color:#3B2420;margin-top:8px}
+.meta{padding:14px 14px 16px;display:grid;gap:6px}
+.meta .row{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.meta h3{font-family:var(--f-display);font-weight:400;font-size:1.45rem;line-height:1.05}
+.meta p{font-size:.95rem;color:var(--ink-soft)}
+.tag{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--line);border-radius:99px;padding:2px 9px;white-space:nowrap;background:var(--blush);color:#3B2420}
+.open-hint{position:absolute;top:22px;right:22px;width:46px;height:46px;border-radius:50%;background:var(--butter);border:2px solid var(--line);display:grid;place-items:center;transform:scale(0) rotate(-90deg);transition:transform .35s cubic-bezier(.3,1.6,.5,1);z-index:2;color:#3B2420}
+.card:hover .open-hint,.card:focus-visible .open-hint{transform:scale(1) rotate(0)}
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.grid{grid-template-columns:minmax(0,1fr)}}
+
+/* modal */
+dialog{border:var(--bw) solid var(--line);border-radius:28px;padding:0;max-width:min(860px,calc(100vw - 32px));width:100%;max-height:calc(100dvh - 40px);background:var(--card);color:var(--ink);box-shadow:10px 10px 0 var(--line)}
+dialog::backdrop{background:color-mix(in srgb,var(--coral) 55%,transparent);backdrop-filter:blur(3px)}
+dialog[open]{animation:pop .5s cubic-bezier(.3,1.5,.5,1)}
+@keyframes pop{from{transform:scale(.8) rotate(-4deg)}}
+.m-head{position:sticky;top:0;background:var(--coral);border-bottom:var(--bw) solid var(--line);padding:18px 64px 16px 24px;color:#2B1714;z-index:2}
+.m-head h3{font-family:var(--f-display);font-weight:400;font-size:clamp(1.7rem,4vw,2.5rem);line-height:1}
+.m-head p{font-weight:600;margin-top:4px}
+.m-close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:2px solid #3B2420;background:#FBF3E9;color:#3B2420;font-size:1.3rem;font-weight:800;display:grid;place-items:center;transition:transform .25s}
+.m-close:hover{transform:rotate(90deg)}
+.m-body{padding:22px 24px 28px;display:grid;gap:18px}
+.m-body ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.m-body li::marker{color:var(--coral-deep);content:"✦  "}
+.gallery{display:flex;gap:14px;overflow-x:auto;padding:6px 4px 14px;scroll-snap-type:x mandatory}
+.gallery figure{margin:0;flex:none;scroll-snap-align:start;display:grid;gap:6px}
+.gallery img{height:240px;width:auto;border:2px solid var(--line);border-radius:12px;background:var(--paper-2);box-shadow:4px 4px 0 var(--line)}
+.gallery figcaption{font-family:var(--f-hand);font-size:1.2rem}
+.m-links{display:flex;flex-wrap:wrap;gap:10px}
+.m-links a{font-weight:700;border:2px solid var(--line);border-radius:999px;padding:7px 14px;text-decoration:none;background:var(--sky);color:#22323C;transition:transform .2s}
+.m-links a:hover{transform:translateY(-3px) rotate(-2deg)}
+.m-stat{display:inline-flex;gap:10px;align-items:baseline;background:var(--butter);border:2px solid var(--line);border-radius:14px;padding:8px 14px;color:#3B2420;justify-self:start}
+.m-stat b{font-family:var(--f-display);font-weight:400;font-size:1.8rem}
+
+/* ---------- process ---------- */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;counter-reset:s}
+.step{background:var(--card);border:var(--bw) solid var(--line);border-radius:20px;padding:18px;box-shadow:4px 4px 0 var(--line);position:relative;transition:transform .3s,background .3s}
+.step:hover{transform:translateY(-8px) rotate(-2deg);background:var(--blush)}
+.step .n{font-family:var(--f-mono);font-size:.8rem}
+.step h3{font-family:var(--f-display);font-weight:400;font-size:1.5rem;margin:6px 0}
+.step p{font-size:.93rem}
+.step .ic{width:46px;height:46px;margin-bottom:6px}
+@media (max-width:980px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- timeline ---------- */
+.journey{background:var(--sky);border-block:var(--bw) solid var(--line);color:#22323C}
+:root[data-theme="dark"] .journey{color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .journey{color:var(--ink)}}
+.journey .h2{color:inherit}
+.tl{position:relative;display:grid;gap:26px;padding-left:64px}
+.tl .rail{position:absolute;left:22px;top:0;bottom:0;width:6px;background:repeating-linear-gradient(var(--line) 0 10px,transparent 10px 18px);border-radius:3px;opacity:.35}
+.tl .fill{position:absolute;left:22px;top:0;width:6px;height:0;background:var(--coral-deep);border-radius:3px;border:1px solid var(--line)}
+.tl .rider{position:absolute;left:-2px;top:0;width:56px;z-index:2;transform:translateY(-50%)}
+.ticket{display:grid;grid-template-columns:minmax(0,1fr) auto;background:var(--card);color:var(--ink);border:var(--bw) solid var(--line);border-radius:18px;box-shadow:5px 5px 0 var(--line);position:relative}
+.ticket::before{content:"";position:absolute;left:-55px;top:24px;width:18px;height:18px;border-radius:50%;background:var(--butter);border:3px solid var(--line)}
+.ticket .tm{padding:18px 20px;display:grid;gap:4px;min-width:0}
+.ticket h3{font-family:var(--f-display);font-weight:400;font-size:1.45rem;line-height:1.05}
+.ticket .role{font-weight:800}
+.ticket .where{font-size:.92rem;color:var(--ink-soft)}
+.ticket ul{margin:8px 0 0;padding-left:1.1em;font-size:.95rem;display:grid;gap:3px}
+.ticket .stub{border-left:3px dashed var(--line);padding:18px 16px;display:grid;align-content:center;justify-items:center;text-align:center;background:var(--blush);border-radius:0 15px 15px 0;color:#3B2420;min-width:120px}
+.ticket .stub b{font-family:var(--f-display);font-weight:400;font-size:1.25rem;line-height:1}
+.ticket.edu .stub{background:var(--mint)}
+.ticket details summary{cursor:pointer;font-family:var(--f-hand);font-size:1.25rem;font-weight:700;margin-top:6px;list-style:none}
+.ticket details summary::-webkit-details-marker{display:none}
+.ticket details summary::before{content:"+ "}
+.ticket details[open] summary::before{content:"– "}
+@media (max-width:640px){.ticket{grid-template-columns:minmax(0,1fr)}.ticket .stub{border-left:0;border-top:3px dashed var(--line);border-radius:0 0 15px 15px;grid-auto-flow:column;gap:10px;justify-content:start}.tl{padding-left:46px}.tl .rail,.tl .fill{left:14px}.ticket::before{left:-41px}.tl .rider{left:-8px;width:44px}}
+
+/* ---------- game ---------- */
+.game{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:36px;align-items:center}
+.arena{position:relative;aspect-ratio:16/11;border:var(--bw) solid var(--line);border-radius:26px;box-shadow:8px 8px 0 var(--line);overflow:hidden;touch-action:manipulation;
+  background:var(--paper-2);background-image:linear-gradient(90deg,color-mix(in srgb,var(--sky) 55%,transparent) 50%,transparent 50%),linear-gradient(color-mix(in srgb,var(--sky) 55%,transparent) 50%,transparent 50%);background-size:38px 38px}
+.arena .hud{position:absolute;top:12px;left:12px;right:12px;display:flex;justify-content:space-between;z-index:3;pointer-events:none}
+.arena .hud span{background:var(--card);border:2px solid var(--line);border-radius:99px;padding:3px 12px;font-family:var(--f-mono);font-size:.85rem}
+.target{position:absolute;width:62px;height:62px;border:0;background:none;padding:0;transform:translate(-50%,-50%) scale(0);animation:appear .25s cubic-bezier(.3,1.7,.5,1) forwards;z-index:2}
+.target svg{width:100%;height:100%;animation:twirl 1.4s linear infinite}
+.target.hit{animation:burst .35s forwards}
+@keyframes appear{to{transform:translate(-50%,-50%) scale(1)}}
+@keyframes burst{to{transform:translate(-50%,-50%) scale(1.8);opacity:0}}
+@keyframes twirl{to{transform:rotate(360deg)}}
+.plus{position:absolute;font-family:var(--f-display);font-size:1.6rem;color:var(--coral-deep);pointer-events:none;animation:rise .8s forwards;z-index:3;-webkit-text-stroke:1px var(--line)}
+@keyframes rise{to{transform:translateY(-50px);opacity:0}}
+.arena .center{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:10px;text-align:center;padding:20px;z-index:2}
+.arena .center .gb{width:110px}
+.arena .center b{font-family:var(--f-display);font-weight:400;font-size:1.6rem;line-height:1.1}
+@media (max-width:860px){.game{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- contact ---------- */
+.contact{background:var(--coral);border-top:var(--bw) solid var(--line);color:#2B1714;overflow:hidden}
+.contact .h2{color:#FBF3E9;-webkit-text-stroke:2px #3B2420;paint-order:stroke fill;text-shadow:5px 5px 0 #3B2420;font-size:clamp(3rem,9vw,7rem)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
+.env{position:relative;width:100%;max-width:460px;aspect-ratio:1.45;justify-self:center;margin-top:120px;cursor:pointer;border:0;background:none;padding:0}
+.env .backp{position:absolute;inset:0;background:#E9A4A8;border:3px solid #3B2420;border-radius:10px}
+.env .letter{position:absolute;left:7%;right:7%;top:8%;height:86%;background:#FFFDF8;border:3px solid #3B2420;border-radius:8px;transition:transform .7s cubic-bezier(.3,1.3,.5,1) .15s;padding:16px 18px;display:grid;align-content:start;gap:4px;text-align:left;color:#3B2420;
+  background-image:repeating-linear-gradient(transparent 0 27px,#F2C9C9 27px 28px)}
+.env.open .letter{transform:translateY(-62%)}
+.env .letter .hand{font-size:1.6rem;line-height:1}
+.env .front{position:absolute;inset:0;pointer-events:none;z-index:2}
+.env .letter{z-index:1}
+.env .front svg{width:100%;height:100%;display:block}
+.env .flap{position:absolute;left:0;right:0;top:0;height:58%;transform-origin:top;transition:transform .5s,z-index 0s .25s;z-index:3}
+.env.open .flap{transform:rotateX(180deg);z-index:0}
+.env.open .letter{z-index:1}
+.env .seal{position:absolute;left:50%;top:50%;width:62px;height:62px;transform:translate(-50%,-30%);z-index:4;transition:transform .4s,opacity .3s}
+.env.open .seal{opacity:0;transform:translate(-50%,-30%) scale(0) rotate(90deg)}
+.c-list{display:grid;gap:12px;margin-top:28px}
+.c-item{display:flex;align-items:center;gap:12px;background:#FBF3E9;border:3px solid #3B2420;border-radius:18px;padding:12px 14px;box-shadow:4px 4px 0 #3B2420;color:#3B2420;text-decoration:none;min-width:0;transition:transform .2s}
+a.c-item:hover{transform:translate(-2px,-2px) rotate(-1deg)}
+.c-item .ci{flex:none;width:42px;height:42px;border-radius:50%;border:2px solid #3B2420;display:grid;place-items:center;background:#F8DE8A}
+.c-item .ct{min-width:0;flex:1}
+.c-item .ct small{display:block;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.c-item .ct b{display:block;overflow-wrap:anywhere;font-size:1.02rem}
+.copy{flex:none;border:2px solid #3B2420;border-radius:99px;background:#AFD6EE;padding:5px 12px;font-weight:700;font-size:.85rem;color:#22323C}
+.foot{padding-block:24px 30px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-weight:600;border-top:3px dashed #3B2420;margin-top:70px}
+.phone-bun{position:absolute;right:max(16px,4vw);bottom:-10px;width:150px;pointer-events:none}
+@media (max-width:860px){.contact-grid{grid-template-columns:minmax(0,1fr)}.phone-bun{display:none}}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,150%);background:var(--ink);color:var(--paper);border:2px solid var(--line);border-radius:99px;padding:10px 20px;font-weight:700;z-index:99;transition:transform .4s cubic-bezier(.3,1.5,.5,1)}
+.toast.show{transform:translate(-50%,0)}
+
+/* bunny */
+.bun{display:block;width:100%;height:auto;overflow:visible}
+.bun .ln{fill:none;stroke:#3B2420;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.bun .body{fill:#FFF8EE;stroke:#3B2420;stroke-width:7;stroke-linejoin:round}
+.bun .pink{fill:#F5B7BC}
+.bun .eye{fill:#3B2420}
+.bun .acc{display:none}
+.bun.glasses .g-glasses,.bun.phones .g-phones,.bun.phone .g-phone,.bun.mug .g-mug{display:inline}
+.bun .blink{animation:blink 4.5s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes blink{0%,46%,50%,100%{transform:scaleY(1)}48%{transform:scaleY(.1)}}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  html{scroll-behavior:auto}
+  .track{animation:none}
+}
+</style>
+
+<!-- ======= LOADER ======= -->
+<div id="loader" aria-hidden="true">
+  <div>
+    <div class="lb" data-bun=""></div>
+    <div class="count"><span id="lc">0</span>%</div>
+    <div class="msg" data-i18n="loader">esquentando as ideias…</div>
+  </div>
+</div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ======= NAV ======= -->
+<header class="nav">
+  <div class="wrap">
+    <nav class="bar" aria-label="Principal">
+      <a class="logo" href="#top">gabi<span>.rp</span></a>
+      <div class="links" id="links">
+        <a href="#sobre" data-i18n="nav.about">sobre</a>
+        <a href="#habilidades" data-i18n="nav.skills">habilidades</a>
+        <a href="#trabalhos" data-i18n="nav.work">trabalhos</a>
+        <a href="#trajetoria" data-i18n="nav.journey">trajetória</a>
+        <a href="#contato" data-i18n="nav.contact">contato</a>
+      </div>
+      <div class="tools">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="lamp" id="lamp" aria-label="Apagar / acender as luzes">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3B2420" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l3 8H4z" fill="#FFF8EE"/><path d="M12 11v8M8 21h8"/><path d="M4 11h16" stroke="#E7B93A"/></svg>
+        </button>
+        <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="links">
+          <svg width="20" height="20" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ======= HERO ======= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="status"><i></i><span data-i18n="status">disponível para novos projetos · Goiânia, BR</span></span>
+      <div><span class="hi hand" data-i18n="hi">oi, eu sou a</span></div>
+      <h1 class="name" aria-label="Gabriella Moreira"><span class="ln" data-split>Gabriella</span><span class="ln" data-split>Moreira</span></h1>
+      <p class="tagline"><span data-i18n="tag.a">Conecto</span>
+        <span class="rot" id="rot" aria-live="off"></span>
+        <span data-i18n="tag.b">com estratégia e criatividade.</span></p>
+      <div class="cta-row">
+        <a class="btn" href="#trabalhos"><span data-i18n="cta.work">ver trabalhos</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a class="btn alt" href="#contato" data-i18n="cta.talk">vamos conversar</a>
+      </div>
+    </div>
+    <div class="photo-zone" id="photoZone">
+      <div class="blob"></div>
+      <img class="me" src="gabi.webp" alt="Foto de Gabriella Moreira Martins" width="700" height="1017" data-alt-en="Photo of Gabriella Moreira Martins">
+      <div class="sticker s1" data-drag data-i18n="st1">Relações Públicas</div>
+      <div class="sticker s2" data-drag>Copywriter</div>
+      <div class="sticker s3" data-drag data-i18n="st3">Analista de Comunicação</div>
+      <div class="hand-note n1"><span data-i18n="drag">me arrasta!</span>
+        <svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M8 6c10 2 26 8 30 26"/><path d="M30 26l8 7 5-10"/></svg></div>
+      <div class="peek" data-bun="glasses" data-follow></div>
+    </div>
+  </div>
+  <div class="star float" style="top:12%;left:46%;width:44px;animation-delay:-1s" data-star="ht"></div>
+  <div class="star float hide-sm" style="top:30%;left:1%;width:40px;animation-delay:-3s" data-star="pink"></div>
+  <div class="star float" style="top:58%;left:52%;width:26px;animation-delay:-2s" data-star="white"></div>
+</section>
+
+<svg class="clouds" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><defs><filter id="wc"><feTurbulence baseFrequency=".035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter></defs><g filter="url(#wc)" id="cloudG"></g></svg>
+<div class="marquee" aria-hidden="true"><div class="track" data-marquee="m1"></div></div>
+
+<!-- ======= ABOUT ======= -->
+<section class="about sec" id="sobre">
+  <div class="wrap about-grid">
+    <div>
+      <div class="idcard-wrap">
+        <button type="button" class="idcard" id="idcard" aria-label="Virar crachá">
+          <span class="lanyard"></span>
+          <div class="in">
+            <div class="face">
+              <div class="id-top"><b data-i18n="id.press">IMPRENSA</b><span class="id-hole"></span><span class="mono">UFG · 26</span></div>
+              <div class="id-photo"><img src="gabi.webp" alt="" width="700" height="1017"></div>
+              <div class="id-body">
+                <h3>Gabriella Moreira Martins</h3>
+                <span class="mono" data-i18n="id.role">Relações Públicas</span>
+                <span style="font-weight:600;font-size:.92rem" data-i18n="id.role2">Analista de Comunicação & Copywriter</span>
+              </div>
+              <div class="barcode"></div>
+            </div>
+            <div class="face back">
+              <h3 data-i18n="id.backT">curiosidades ✦</h3>
+              <ul id="facts"></ul>
+            </div>
+          </div>
+        </button>
+        <p class="flip-hint" data-i18n="id.hint">↻ clica no crachá pra virar</p>
+      </div>
+    </div>
+    <div class="bio">
+      <span class="eyebrow mono" data-i18n="about.eyebrow">sobre mim</span>
+      <h2 class="h2" data-i18n-html="about.title">Prazer, <em>Gabi!</em></h2>
+      <p data-i18n-html="about.p1"></p>
+      <p data-i18n-html="about.p2"></p>
+      <div class="stats" id="stats"></div>
+      <div class="kit"><span class="mono" data-i18n="about.kit">caixa de ferramentas:</span>
+        <span class="chip">Canva</span><span class="chip">CapCut</span><span class="chip">ManyChat</span><span class="chip">WordPress</span><span class="chip">Photoshop</span><span class="chip">Google Meu Negócio</span><span class="chip">Meta (Instagram)</span><span class="chip">TikTok</span><span class="chip">LinkedIn</span><span class="chip">Pinterest</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= SKILLS / PLAYLIST ======= -->
+<section class="sec" id="habilidades">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow mono" data-i18n="skills.eyebrow">o que eu faço</span>
+      <h2 class="h2" data-i18n-html="skills.title">Minha <em>playlist</em> de habilidades</h2></div>
+      <p class="note" data-i18n="skills.note">aperta o play em cada faixa ♪</p>
+    </div>
+    <div class="player pop">
+      <div class="deck">
+        <div class="vinyl" id="vinyl"><div class="label"><div><span class="mono lt" style="font-size:.65rem;display:block;margin-bottom:22px" id="vside">LADO A</span><b id="vtitle">Gabi.rp</b></div></div></div>
+        <svg class="arm" id="arm" viewBox="0 0 160 200" aria-hidden="true"><circle cx="136" cy="20" r="16" fill="#FBF3E9" stroke="#3B2420" stroke-width="4"/><path d="M136 20 L120 150 L80 182" fill="none" stroke="#3B2420" stroke-width="9" stroke-linecap="round"/><path d="M136 20 L120 150 L80 182" fill="none" stroke="#F8DE8A" stroke-width="3" stroke-linecap="round"/><rect x="60" y="170" width="34" height="22" rx="5" transform="rotate(-38 77 181)" fill="#EE8582" stroke="#3B2420" stroke-width="4"/></svg>
+      </div>
+      <div class="tracklist">
+        <h3 data-i18n="skills.album">Lado A: Comunicação</h3>
+        <p class="sub" data-i18n="skills.albumSub">o som por trás de cada estratégia</p>
+        <ol class="tracks" id="tracks"></ol>
+        <div class="liner" id="liner" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee pink rev" aria-hidden="true"><div class="track" data-marquee="m2"></div></div>
+
+<!-- ======= WORK ======= -->
+<section class="sec" id="trabalhos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow mono" data-i18n="work.eyebrow">portfólio de projetos</span>
+      <h2 class="h2" data-i18n-html="work.title">Projetos com <em>propósito</em></h2></div>
+      <p class="note" data-i18n="work.note">clica num selo pra abrir o projeto</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar projetos"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <div class="m-head"><h3 id="mTitle"></h3><p id="mSub"></p>
+    <button type="button" class="m-close" id="mClose" aria-label="Fechar">✕</button></div>
+  <div class="m-body" id="mBody"></div>
+</dialog>
+
+<!-- ======= PROCESS ======= -->
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow mono" data-i18n="proc.eyebrow">como eu trabalho</span>
+      <h2 class="h2" data-i18n-html="proc.title">Do briefing ao <em>KPI</em></h2></div>
+      <p class="note" data-i18n="proc.note">cinco passos, sempre nessa ordem</p>
+    </div>
+    <div class="steps" id="steps"></div>
+  </div>
+</section>
+
+<!-- ======= JOURNEY ======= -->
+<section class="journey sec" id="trajetoria">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow mono" style="color:var(--ink)" data-i18n="tl.eyebrow">experiência & formação</span>
+      <h2 class="h2" data-i18n-html="tl.title">Minha <em>trajetória</em></h2></div>
+      <p class="note" style="color:inherit" data-i18n="tl.note">rola a página e acompanha o coelhinho</p>
+    </div>
+    <div class="tl" id="tl">
+      <div class="rail"></div><div class="fill" id="tlFill"></div>
+      <div class="rider" id="rider" data-bun="phones"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= GAME ======= -->
+<section class="sec" id="pausa">
+  <div class="wrap game">
+    <div>
+      <span class="eyebrow mono" data-i18n="game.eyebrow">pausa pro café</span>
+      <h2 class="h2" data-i18n-html="game.title">Caça às <em>ideias</em></h2>
+      <p style="margin-top:16px;max-width:42ch;font-size:1.1rem" data-i18n="game.p">Toda boa campanha começa com uma ideia que aparece do nada e some rápido. Clica nas estrelinhas antes que elas desapareçam. Você tem 15 segundos.</p>
+      <p class="hand" style="font-size:1.5rem;margin-top:14px" id="best"></p>
+    </div>
+    <div class="arena" id="arena">
+      <div class="hud"><span id="hudScore">0 ✦</span><span id="hudTime">15s</span></div>
+      <div class="center" id="arenaCenter">
+        <div class="gb" data-bun="mug"></div>
+        <b id="gMsg" data-i18n="game.ready">Pronta pra caçar ideias?</b>
+        <button type="button" class="btn" id="gStart" data-i18n="game.start">começar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section class="contact sec" id="contato">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow mono" style="color:var(--ink)" data-i18n="c.eyebrow">contato</span>
+        <h2 class="h2" data-i18n="c.title">Bora criar algo junto?</h2>
+        <p style="font-size:1.2rem;font-weight:600;margin-top:16px;max-width:40ch" data-i18n="c.p">Estou aberta a vagas, freelas e parcerias em comunicação, conteúdo e relações públicas. Me chama!</p>
+        <div class="c-list">
+          <div class="c-item"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2420" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span class="ct"><small>e-mail</small><b id="mail">gabriellamarmormoreira@gmail.com</b></span>
+            <button type="button" class="copy" data-copy="gabriellamarmormoreira@gmail.com" data-i18n="c.copy">copiar</button></div>
+          <div class="c-item"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2420" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <span class="ct"><small data-i18n="c.phone">telefone / whatsapp</small><b>+55 (62) 99579-6416</b></span>
+            <button type="button" class="copy" data-copy="+5562995796416" data-i18n="c.copy">copiar</button></div>
+          <a class="c-item" href="https://www.linkedin.com/in/gabriella-moreira-martins-rp/" target="_blank" rel="noopener"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="#3B2420"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></span>
+            <span class="ct"><small>LinkedIn</small><b>in/gabriella-moreira-martins-rp</b></span>↗</a>
+          <a class="c-item" href="http://lattes.cnpq.br/5849290204365432" target="_blank" rel="noopener"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2420" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+            <span class="ct"><small data-i18n="c.lattes">currículo lattes</small><b>lattes.cnpq.br/5849290204365432</b></span>↗</a>
+        </div>
+      </div>
+      <button type="button" class="env" id="env" aria-label="Abrir carta">
+        <div class="backp"></div>
+        <div class="letter">
+          <span class="hand" data-i18n="c.letterHi">Oi! Obrigada pela visita ♡</span>
+          <span style="font-size:.98rem;font-weight:600;margin-top:6px" data-i18n="c.letter">Se uma marca precisa contar melhor a própria história, eu quero ajudar a escrever.</span>
+          <span class="hand" style="margin-top:8px;font-size:1.4rem">— Gabi</span>
+        </div>
+        <div class="front"><svg viewBox="0 0 290 200" preserveAspectRatio="none"><path d="M3 197 L145 105 L287 197 Z" fill="#F4B6BA" stroke="#3B2420" stroke-width="4" stroke-linejoin="round"/><path d="M3 3 L3 197 L120 110 Z M287 3 L287 197 L170 110 Z" fill="#EFA9AE" stroke="#3B2420" stroke-width="4" stroke-linejoin="round"/></svg></div>
+        <div class="flap"><svg viewBox="0 0 290 116" preserveAspectRatio="none" style="width:100%;height:100%;display:block"><path d="M3 3 L145 113 L287 3 Z" fill="#F7C3C3" stroke="#3B2420" stroke-width="4" stroke-linejoin="round"/></svg></div>
+        <div class="seal"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="#DB5F63" stroke="#3B2420" stroke-width="5"/><path d="M50 72 C 20 52, 30 28, 50 42 C 70 28, 80 52, 50 72Z" fill="#FBF3E9" stroke="#3B2420" stroke-width="3"/></svg></div>
+      </button>
+    </div>
+    <div class="foot">
+      <span data-i18n="c.foot">feito com ✦ e muita estratégia · Gabriella Moreira Martins © 2026</span>
+      <a href="#top" data-i18n="c.top">voltar ao topo ↑</a>
+    </div>
+  </div>
+  <div class="phone-bun" data-bun="phone"></div>
+</section>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = (s, r=document) => r.querySelector(s), $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const store = { get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}} };
+
+/* ---------------- i18n ---------------- */
+const T = {
+pt:{
+ loader:"esquentando as ideias…",
+ "nav.about":"sobre","nav.skills":"habilidades","nav.work":"trabalhos","nav.journey":"trajetória","nav.contact":"contato",
+ status:"disponível para novos projetos · Goiânia, BR", hi:"oi, eu sou a",
+ "tag.a":"Conecto","tag.b":"com estratégia e criatividade.", rot:["pessoas","marcas","dados","propósitos","histórias"],
+ "cta.work":"ver trabalhos","cta.talk":"vamos conversar", st1:"Relações Públicas", st3:"Analista de Comunicação", drag:"me arrasta!",
+ "id.press":"IMPRENSA","id.role":"Relações Públicas","id.role2":"Analista de Comunicação & Copywriter","id.backT":"curiosidades ✦","id.hint":"↻ clica no crachá pra virar",
+ facts:["Escrevo em português e inglês (nível C2) para leitores no Brasil e nos EUA.","Fui protagonista de um vídeo institucional do Banco de Sangue do HC/UFG.","Coordenei a recepção da Semana de RP que comemorou os 50 anos do curso na UFG.","Já escrevi sobre direito, tecnologia, APIs e até motorhomes.","Apresentei dois trabalhos no Intercom em 2024."],
+ "about.eyebrow":"sobre mim","about.title":"Prazer, <em>Gabi!</em>",
+ "about.p1":"Sou estudante de <strong>Relações Públicas na Universidade Federal de Goiás</strong> e trabalho com comunicação estratégica, copywriting e inbound marketing. Gosto de conteúdo que tem dado por trás e intenção na frente.",
+ "about.p2":"Já gerenciei redes de uma marca nacional, fiz assessoria de imprensa para um projeto com 19 instituições federais, escrevi artigos de SEO em dois idiomas e organizei evento de 50 anos. Meu trabalho é <strong>conectar pessoas, marcas e propósitos</strong>.",
+ "about.kit":"caixa de ferramentas:",
+ stats:[["343 mil","seguidores na maior conta que gerenciei (@libbercampers)"],["19","instituições federais no Pro-Semeia"],["20+","equipes regionais alinhadas na comunicação interna"],["7","canais digitais geridos ao mesmo tempo"],["2","trabalhos apresentados no Intercom 2024"],["C2","nível de inglês certificado"]],
+ "skills.eyebrow":"o que eu faço","skills.title":"Minha <em>playlist</em> de habilidades","skills.note":"aperta o play em cada faixa ♪","skills.album":"Lado A: Comunicação","skills.albumSub":"o som por trás de cada estratégia","side":"LADO A",
+ skillsPick:"Escolha uma faixa para ouvir os detalhes.",
+ "work.eyebrow":"portfólio de projetos","work.title":"Projetos com <em>propósito</em>","work.note":"clica num selo pra abrir o projeto",
+ "proc.eyebrow":"como eu trabalho","proc.title":"Do briefing ao <em>KPI</em>","proc.note":"cinco passos, sempre nessa ordem",
+ "tl.eyebrow":"experiência & formação","tl.title":"Minha <em>trajetória</em>","tl.note":"rola a página e acompanha o coelhinho",
+ more:"ver detalhes", open:"abrir projeto",
+ "game.eyebrow":"pausa pro café","game.title":"Caça às <em>ideias</em>","game.p":"Toda boa campanha começa com uma ideia que aparece do nada e some rápido. Clica nas estrelinhas antes que elas desapareçam. Você tem 15 segundos.",
+ "game.ready":"Pronta pra caçar ideias?","game.start":"começar","game.again":"jogar de novo",
+ gameEnd:s=> s>=18?`${s} ideias! Isso dá um planejamento do mês inteiro.`: s>=10?`${s} ideias! Já dá pra montar a pauta da semana.`: s>0?`${s} ideias. Um café e tenta de novo?`:`Nenhuma ideia… acontece com todo mundo.`,
+ best:b=>`seu recorde: ${b} ideias ✦`,
+ "c.eyebrow":"contato","c.title":"Bora criar algo junto?","c.p":"Estou aberta a vagas, freelas e parcerias em comunicação, conteúdo e relações públicas. Me chama!",
+ "c.copy":"copiar","c.phone":"telefone / whatsapp","c.lattes":"currículo lattes","c.letterHi":"Oi! Obrigada pela visita ♡","c.letter":"Se uma marca precisa contar melhor a própria história, eu quero ajudar a escrever.",
+ "c.foot":"feito com ✦ e muita estratégia · Gabriella Moreira Martins © 2026","c.top":"voltar ao topo ↑", copied:"Copiado! ✦", copyFail:"Selecionei o texto, é só copiar.",
+ m1:["relações públicas","copywriting","social media","inbound marketing","assessoria de imprensa","storytelling","SEO","eventos","automação"],
+ m2:["Libber Campers","Pro-Semeia","JuriDigital","CA RP UFG","Semana de RP","HC-UFG / EBSERH","Intercom","Martin Law","Hub do Desenvolvedor","Meu Vade Mecum"],
+},
+en:{
+ loader:"warming up the ideas…",
+ "nav.about":"about","nav.skills":"skills","nav.work":"work","nav.journey":"journey","nav.contact":"contact",
+ status:"open to new projects · Goiânia, Brazil", hi:"hi, I'm",
+ "tag.a":"I connect","tag.b":"through strategy and creativity.", rot:["people","brands","data","purpose","stories"],
+ "cta.work":"see my work","cta.talk":"let's talk", st1:"Public Relations", st3:"Communication Analyst", drag:"drag me!",
+ "id.press":"PRESS","id.role":"Public Relations","id.role2":"Communication Analyst & Copywriter","id.backT":"fun facts ✦","id.hint":"↻ click the badge to flip it",
+ facts:["I write in Portuguese and English (C2) for readers in Brazil and the US.","I starred in an institutional video for the HC/UFG Blood Bank.","I coordinated guest reception for the 50th anniversary of UFG's PR program.","I've written about law, tech, APIs and even motorhomes.","I presented two papers at Intercom 2024."],
+ "about.eyebrow":"about me","about.title":"Nice to meet you, <em>I'm Gabi!</em>",
+ "about.p1":"I study <strong>Public Relations at the Federal University of Goiás</strong> and work in strategic communication, copywriting and inbound marketing. I like content with data behind it and intention up front.",
+ "about.p2":"I've run social media for a national brand, handled press relations for a project with 19 federal institutions, written SEO articles in two languages and helped run a 50th-anniversary event. My job is <strong>connecting people, brands and purpose</strong>.",
+ "about.kit":"toolkit:",
+ stats:[["343K","followers on the largest account I've managed (@libbercampers)"],["19","federal institutions in Pro-Semeia"],["20+","regional teams aligned through internal comms"],["7","digital channels managed at once"],["2","papers presented at Intercom 2024"],["C2","certified English level"]],
+ "skills.eyebrow":"what I do","skills.title":"My skills <em>playlist</em>","skills.note":"hit play on each track ♪","skills.album":"Side A: Communication","skills.albumSub":"the sound behind every strategy","side":"SIDE A",
+ skillsPick:"Pick a track to hear the details.",
+ "work.eyebrow":"project portfolio","work.title":"Projects with <em>purpose</em>","work.note":"click a stamp to open the project",
+ "proc.eyebrow":"how I work","proc.title":"From brief to <em>KPI</em>","proc.note":"five steps, always in this order",
+ "tl.eyebrow":"experience & education","tl.title":"My <em>journey</em>","tl.note":"scroll down and follow the bunny",
+ more:"see details", open:"open project",
+ "game.eyebrow":"coffee break","game.title":"Idea <em>hunt</em>","game.p":"Every good campaign starts with an idea that pops up out of nowhere and vanishes fast. Click the little stars before they disappear. You have 15 seconds.",
+ "game.ready":"Ready to catch some ideas?","game.start":"start","game.again":"play again",
+ gameEnd:s=> s>=18?`${s} ideas! That's a whole month of content.`: s>=10?`${s} ideas! Enough for this week's content plan.`: s>0?`${s} ideas. Grab a coffee and try again?`:`No ideas… happens to everyone.`,
+ best:b=>`your best: ${b} ideas ✦`,
+ "c.eyebrow":"contact","c.title":"Let's make something together?","c.p":"I'm open to jobs, freelance work and partnerships in communication, content and public relations. Say hi!",
+ "c.copy":"copy","c.phone":"phone / whatsapp","c.lattes":"lattes cv (academic)","c.letterHi":"Hi! Thanks for stopping by ♡","c.letter":"If a brand needs to tell its own story better, I'd love to help write it.",
+ "c.foot":"made with ✦ and a lot of strategy · Gabriella Moreira Martins © 2026","c.top":"back to top ↑", copied:"Copied! ✦", copyFail:"Text selected, just copy it.",
+ m1:["public relations","copywriting","social media","inbound marketing","press relations","storytelling","SEO","events","automation"],
+ m2:["Libber Campers","Pro-Semeia","JuriDigital","CA RP UFG","PR Week","HC-UFG / EBSERH","Intercom","Martin Law","Hub do Desenvolvedor","Meu Vade Mecum"],
+}};
+
+const SKILLS = [
+ {t:{pt:"Comunicação Estratégica",en:"Strategic Communication"},du:"3:48",
+  d:{pt:"Gestão de comunicação organizacional, institucional e interna. Planejamento de conteúdo amarrado a objetivos de negócio e acompanhamento contínuo de KPIs.",en:"Organizational, institutional and internal communication management. Content planning tied to business goals, with ongoing KPI tracking."},
+  tags:["KPIs","planejamento / planning","comunicação interna / internal comms"]},
+ {t:{pt:"Copywriting & Inbound",en:"Copywriting & Inbound"},du:"4:12",
+  d:{pt:"Escrita persuasiva com AIDA, storytelling e SEO. Artigos para blogs, legendas, roteiros e e-mails no tom de voz de cada marca, em português e inglês.",en:"Persuasive writing with AIDA, storytelling and SEO. Blog articles, captions, scripts and emails in each brand's voice, in Portuguese and English."},
+  tags:["AIDA","SEO","storytelling","WordPress","PT / EN"]},
+ {t:{pt:"Social Media & Automação",en:"Social Media & Automation"},du:"3:21",
+  d:{pt:"Gestão de comunidades e estratégia multicanal em Instagram, TikTok, LinkedIn, YouTube, Pinterest, WhatsApp e Google Meu Negócio. Fluxos de automação no ManyChat.",en:"Community management and omnichannel strategy across Instagram, TikTok, LinkedIn, YouTube, Pinterest, WhatsApp and Google Business Profile. Automation flows in ManyChat."},
+  tags:["ManyChat","Instagram","TikTok","LinkedIn","Pinterest"]},
+ {t:{pt:"Audiovisual",en:"Audiovisual"},du:"2:59",
+  d:{pt:"Edição de vídeo institucional e conteúdo vertical no CapCut e no Canva. Roteiros estratégicos para lideranças e briefings para materiais físicos.",en:"Institutional and short-form video editing in CapCut and Canva. Strategic scripts for executives and briefings for print collateral."},
+  tags:["CapCut","Canva","roteiro / scripts","briefing"]},
+ {t:{pt:"Eventos & Relações Públicas",en:"Events & Public Relations"},du:"4:30",
+  d:{pt:"Cobertura e produção de eventos, ativações de marca, relacionamento com parceiros e influenciadores e assessoria de imprensa com releases e mailing.",en:"Event coverage and production, brand activations, partner and influencer relations, and press relations with releases and media lists."},
+  tags:["releases","mailing","influencers","ativações / activations"]},
+];
+
+const FILTERS = [["all",{pt:"todos",en:"all"}],["social",{pt:"social media",en:"social media"}],["press",{pt:"imprensa",en:"press"}],["events",{pt:"eventos",en:"events"}],["content",{pt:"conteúdo & SEO",en:"content & SEO"}],["av",{pt:"audiovisual",en:"audiovisual"}],["design",{pt:"design",en:"design"}],["academic",{pt:"acadêmico",en:"academic"}]];
+
+const PROJECTS = [
+ {id:"libber",cats:["social","events","av"],tag:{pt:"social media",en:"social media"},color:"var(--mint)",cover:{big:"343K",small:{pt:"seguidores ✦ @libbercampers",en:"followers ✦ @libbercampers"}},
+  t:"Libber Campers",sub:{pt:"Analista de Comunicação · antes, estágio em Marketing · out 2025 – nov 2026",en:"Communication Analyst · previously Marketing Intern · Oct 2025 – Nov 2026"},
+  short:{pt:"Conteúdo, automação e eventos para o “Airbnb dos motorhomes”.",en:"Content, automation and events for the “Airbnb of motorhomes”."},
+  stat:["343K",{pt:"seguidores no perfil principal",en:"followers on the main account"}],
+  b:{pt:["Planejamento e produção de conteúdo orientado por dados, com análise contínua de KPIs.","Gestão integral de 7 canais: Instagram, LinkedIn, TikTok, YouTube, Pinterest, WhatsApp e Google Meu Negócio.","Fluxos de automação de comunicação no ManyChat.","Apoio na produção e cobertura de eventos, com briefings para materiais físicos e ativação de marca.","Relacionamento e prospecção de parceiros estratégicos e influenciadores digitais.","Roteiros para vídeos institucionais com lideranças e sócios, e copy no método AIDA."],
+     en:["Planned and produced data-driven content with ongoing KPI analysis.","Ran 7 channels end to end: Instagram, LinkedIn, TikTok, YouTube, Pinterest, WhatsApp and Google Business Profile.","Built automated communication flows in ManyChat.","Supported event production and coverage, writing briefings for print collateral and brand activations.","Managed outreach and relationships with strategic partners and digital influencers.","Wrote video scripts for executives and partners, plus AIDA-based copy."]},
+  links:[["@libbercampers","https://www.instagram.com/libbercampers/"],["@libberproprietarios","https://www.instagram.com/libberproprietarios/"]]},
+ {id:"prosemeia",cats:["press","social"],tag:{pt:"assessoria de imprensa",en:"press relations"},color:"var(--butter)",cover:{big:"19",small:{pt:"instituições federais",en:"federal institutions"}},
+  t:"Pro-Semeia (UFG)",sub:{pt:"Assessora de Comunicação · voluntária · ago – dez 2025",en:"PR & Press Officer · volunteer · Aug – Dec 2025"},
+  short:{pt:"Imprensa e redes de um programa nacional com MDA e INCRA.",en:"Press and social media for a national program with MDA and INCRA."},
+  stat:["20+",{pt:"equipes regionais alinhadas",en:"regional teams aligned"}],
+  b:{pt:["Projeto de escopo nacional com 19 instituições federais de ensino, o Ministério do Desenvolvimento Agrário (MDA) e o INCRA.","Elaboração de releases institucionais, relação com a imprensa e manutenção de mailing de jornalistas.","Gestão estratégica de mídias sociais com conteúdo acessível para públicos em situação de vulnerabilidade.","Suporte à comunicação interna e alinhamento de mais de 20 equipes regionais."],
+     en:["National project with 19 federal universities and institutes, the Ministry of Agrarian Development (MDA) and INCRA.","Wrote press releases, handled media relations and kept journalist lists up to date.","Ran social media strategy with accessible content for vulnerable audiences.","Supported internal communication and alignment across 20+ regional teams."]},
+  links:[["@prosemeia","https://www.instagram.com/prosemeia/"]]},
+ {id:"carp",cats:["social","design"],tag:{pt:"social media + design",en:"social media + design"},img:"carp-feed.webp",
+  t:"CA de Relações Públicas UFG",sub:{pt:"Gestão de redes sociais e coleção de produtos 2024",en:"Social media management and 2024 merch collection"},
+  short:{pt:"Redes do Centro Acadêmico e design da coleção oficial.",en:"Student association socials and official merch design."},
+  b:{pt:["Gestão das redes do Centro Acadêmico de RP da FIC-UFG, com comunicados para alunos e professores, inclusive em momentos de crise.","Divulgação de eventos culturais e acadêmicos, com produção e postagem das artes.","Criação do protocolo oficial de divulgação de eventos, que virou processo interno fixo.","Design de produtos da coleção 2024 para alunos, professores e ex-alunos: caderno, marca-página, bottons e ecobag."],
+     en:["Ran social media for the PR student association at FIC-UFG, with announcements for students and faculty, including during crises.","Promoted cultural and academic events, producing and posting the artwork.","Created the official event promotion protocol, which became a permanent internal process.","Designed products for the 2024 collection for students, faculty and alumni: notebook, bookmark, pins and tote bag."]},
+  gallery:[["carp-feed.webp",{pt:"feed @carpufg",en:"@carpufg feed"}],["caderno.webp",{pt:"caderno",en:"notebook"}],["marcapagina-1.webp",{pt:"marca-página",en:"bookmark"}],["marcapagina-2.webp",{pt:"marca-página",en:"bookmark"}],["botton-1.webp",{pt:"botton",en:"pin"}],["botton-2.webp",{pt:"botton",en:"pin"}],["botton-3.webp",{pt:"botton",en:"pin"}],["ecobag.webp",{pt:"ecobag",en:"tote bag"}]],
+  links:[["@carpufg","https://www.instagram.com/carpufg/"]]},
+ {id:"srp",cats:["events"],tag:{pt:"eventos",en:"events"},img:"srp.webp",
+  t:{pt:"Semana de RP 2025",en:"PR Week 2025"},sub:{pt:"Coordenadora da Comissão de Secretaria e Recepção · 50 anos do curso",en:"Lead, Secretariat & Reception Committee · program's 50th anniversary"},
+  short:{pt:"O evento que celebrou os 50 anos de RP na UFG.",en:"The event celebrating 50 years of PR at UFG."},
+  b:{pt:["Evento da turma de Gestão de Eventos que celebrou a história do curso e homenageou alunos, professores e servidores.","Pré-evento: gestão da informação para convidados e comissões, criação e manutenção do site oficial e curadoria do conteúdo da exposição de 50 anos.","Durante o evento: recepção dos convidados especiais e credenciamento de todos os inscritos.","Pós-evento: distribuição dos certificados e pesquisa de satisfação."],
+     en:["Event run by the Event Management class to celebrate the program's history and honor students, faculty and staff.","Before: information flow for guests and committees, building and maintaining the official website, curating content for the 50-year exhibition.","During: welcoming special guests and checking in every attendee.","After: issuing certificates and running the satisfaction survey."]},
+  gallery:[["srp.webp",{pt:"cobertura @rp.ufg",en:"@rp.ufg coverage"}]],
+  links:[["@rp.ufg","https://www.instagram.com/rp.ufg/"]]},
+ {id:"blood",cats:["av"],tag:{pt:"audiovisual",en:"audiovisual"},img:"banco-sangue.webp",
+  t:{pt:"Vídeo institucional: Banco de Sangue",en:"Institutional video: Blood Bank"},sub:{pt:"Roteiro, atuação e site · parceria HC/UFG/EBSERH",en:"Script, acting and website · with HC/UFG/EBSERH"},
+  short:{pt:"Roteiro e protagonismo num vídeo sobre doação de sangue.",en:"Scripted and starred in a blood donation video."},
+  b:{pt:["Vídeo que conta histórias ligadas ao Banco de Sangue para incentivar a doação altruísta e apoiar as campanhas de novembro.","Ajudei a escrever o roteiro, as falas e o guia de captação de imagens.","Fui a personagem principal, mostrando o processo de doação.","Desenvolvi o site oficial usado como material de apoio para quem queria doar."],
+     en:["A video telling stories around the Blood Bank to encourage voluntary donation and support the November campaigns.","Co-wrote the script, dialogue and shot guide.","Played the lead, walking through the donation process.","Built the official website used as support material for would-be donors."]},
+  links:[[{pt:"assistir no YouTube",en:"watch on YouTube"},"https://www.youtube.com/watch?v=apT_eba_Grk&t=9s"]]},
+ {id:"copy",cats:["content"],tag:{pt:"conteúdo & SEO",en:"content & SEO"},color:"var(--sky)",cover:{big:"PT/EN",small:{pt:"artigos de SEO",en:"SEO articles"}},
+  t:{pt:"Copywriting para blogs",en:"Blog copywriting"},sub:{pt:"Estagiária de Copywriting · JuriDigital · dez 2023 – abr 2026",en:"Copywriting Intern · JuriDigital · Dec 2023 – Apr 2026"},
+  short:{pt:"Artigos de SEO sobre direito, tecnologia e gestão.",en:"SEO articles on law, tech and management."},
+  b:{pt:["Artigos otimizados para SEO e publicação no WordPress nas editorias de tecnologia, gestão e mercado jurídico.","Textos educativos para construir autoridade digital dos clientes com copywriting e SEO.","Produção em português e inglês, para públicos no Brasil e nos Estados Unidos, com storytelling e escrita criativa."],
+     en:["SEO-optimized articles published on WordPress across tech, management and legal topics.","Educational content built to grow clients' digital authority through copywriting and SEO.","Written in Portuguese and English for audiences in Brazil and the US, using storytelling and creative writing."]},
+  links:[["JuriDigital","https://www.juridigital.com.br/blog/"],["Hub do Desenvolvedor","https://blog.hubdodesenvolvedor.com.br"],["Meu Vade Mecum Online","https://www.meuvademecumonline.com.br/blog/"],["Martin Law (EN)","https://markdmartin.com/blog-and-latest-news/"]]},
+ {id:"intercom",cats:["academic"],tag:{pt:"acadêmico",en:"academic"},color:"var(--blush)",cover:{big:"2×",small:{pt:"trabalhos no Intercom",en:"Intercom papers"}},
+  t:"Intercom 2024",sub:{pt:"Centro-Oeste (FIC-UFG, Goiânia) e Nacional (Univali, Balneário Camboriú)",en:"Midwest (FIC-UFG, Goiânia) and National (Univali, Balneário Camboriú)"},
+  short:{pt:"Dois artigos no maior congresso de comunicação do Brasil.",en:"Two papers at Brazil's largest communication congress."},
+  b:{pt:["Dois trabalhos escritos com colegas e professores, apresentados no Intercom Centro-Oeste e no Intercom Nacional, o maior congresso de pesquisa em comunicação do país.","Análise de Imagem: Reflexões e Discussões Acerca das Mensagens e Simbologias do Pôster do Filme “Pearl”.","As Mídias Digitais como Espaços de Legitimação e Deslegitimação."],
+     en:["Two papers written with classmates and professors, presented at Intercom Midwest and Intercom National, Brazil's largest communication research congress.","Image analysis of the messages and symbols in the poster for the film “Pearl” (in Portuguese).","Digital media as spaces of legitimation and delegitimation (in Portuguese)."]},
+  links:[[{pt:"artigo: pôster de “Pearl”",en:"paper: “Pearl” poster"},"https://sistemas.intercom.org.br/pdf/submissao/nacional/17/07192024163350669abf9e4bb3c.pdf"],[{pt:"artigo: mídias digitais",en:"paper: digital media"},"https://sistemas.intercom.org.br/pdf/submissao/nacional/17/07132024215509669321ed90f12.pdf"]]},
+];
+
+const STEPS = [
+ {i:"ear",t:{pt:"Escuta",en:"Listen"},d:{pt:"Briefing, público e pesquisa de tendências do nicho.",en:"Brief, audience and niche trend research."}},
+ {i:"map",t:{pt:"Estratégia",en:"Plan"},d:{pt:"Objetivos, KPIs, canais e calendário editorial.",en:"Goals, KPIs, channels and content calendar."}},
+ {i:"pen",t:{pt:"Criação",en:"Create"},d:{pt:"Copy, roteiro e edição no tom de voz da marca.",en:"Copy, scripts and editing in the brand's voice."}},
+ {i:"mega",t:{pt:"Distribuição",en:"Amplify"},d:{pt:"Multicanal, automação, imprensa e parceiros.",en:"Omnichannel, automation, press and partners."}},
+ {i:"chart",t:{pt:"Análise",en:"Measure"},d:{pt:"Leitura dos KPIs e ajuste do próximo ciclo.",en:"Read the KPIs and adjust the next cycle."}},
+];
+
+const TL = [
+ {k:"work",org:"Libber Campers",role:{pt:"Analista de Comunicação",en:"Communication Analyst"},where:{pt:"Florianópolis, SC · remoto",en:"Florianópolis, Brazil · remote"},when:{pt:"ago 2026 – nov 2026",en:"Aug 2026 – Nov 2026"},b:PROJECTS[0].b,slice:[0,2,3,4,5]},
+ {k:"work",org:"Libber Campers",role:{pt:"Estagiária de Marketing / Mídias Sociais",en:"Marketing & Social Media Intern"},where:{pt:"Florianópolis, SC · remoto",en:"Florianópolis, Brazil · remote"},when:{pt:"out 2025 – ago 2026",en:"Oct 2025 – Aug 2026"},
+  b:{pt:["Pesquisa de tendências e pautas para o nicho da marca.","Copy persuasiva no tom de voz da marca com o método AIDA.","Edição de peças e vídeos no Canva e no CapCut.","Gestão de 7 canais digitais e de comunidades no WhatsApp e no Instagram."],en:["Trend research and topic ideas for the brand's niche.","Persuasive on-brand copy using the AIDA framework.","Edited graphics and videos in Canva and CapCut.","Ran 7 digital channels and communities on WhatsApp and Instagram."]}},
+ {k:"work",org:"Pro-Semeia (UFG)",role:{pt:"Assessora de Comunicação",en:"PR & Press Officer"},where:{pt:"Goiânia, GO · híbrido, voluntário",en:"Goiânia, Brazil · hybrid, volunteer"},when:{pt:"ago 2025 – dez 2025",en:"Aug 2025 – Dec 2025"},b:PROJECTS[1].b},
+ {k:"work",org:"JuriDigital",role:{pt:"Estagiária de Copywriting",en:"Copywriting Intern"},where:{pt:"Belo Horizonte, MG · remoto",en:"Belo Horizonte, Brazil · remote"},when:{pt:"dez 2023 – abr 2026",en:"Dec 2023 – Apr 2026"},b:PROJECTS[5].b},
+ {k:"edu",org:{pt:"Universidade Federal de Goiás",en:"Federal University of Goiás"},role:{pt:"Bacharelado em Relações Públicas",en:"B.A. in Public Relations"},where:{pt:"Goiânia, GO",en:"Goiânia, Brazil"},when:{pt:"conclusão 2026",en:"expected 2026"}},
+ {k:"edu",org:"English Live (EF)",role:{pt:"Inglês fluente · nível C2",en:"Fluent English · C2 level"},where:{pt:"certificado",en:"certificate"},when:{pt:"C2",en:"C2"}},
+ {k:"edu",org:{pt:"Faculdade INPRO · EBAC",en:"Faculdade INPRO · EBAC"},role:{pt:"Cursos de Social Media e de Photoshop / Adobe Creative Cloud",en:"Courses in Social Media and Photoshop / Adobe Creative Cloud"},where:{pt:"cursos livres",en:"short courses"},when:{pt:"cursos",en:"courses"}},
+];
+
+/* ---------------- graphics ---------------- */
+function bunny(acc=""){
+ return `<svg class="bun ${acc}" viewBox="0 0 220 230" aria-hidden="true"><defs><filter id="wob${Math.random().toString(36).slice(2,7)}"></filter></defs>
+ <g class="wob">
+  <path class="body" d="M78 98 C 60 52, 58 14, 84 12 C 108 10, 110 54, 104 96 Z"/>
+  <path class="body" d="M118 96 C 114 52, 124 12, 150 16 C 176 22, 164 64, 146 100 Z"/>
+  <path class="pink" d="M82 86 C 74 56, 74 30, 86 28 C 96 28, 98 58, 96 86 Z"/>
+  <path class="pink" d="M128 88 C 128 58, 136 32, 148 34 C 158 38, 150 66, 140 90 Z"/>
+  <path class="body" d="M36 152 C 32 104, 72 86, 110 86 C 152 86, 188 104, 184 152 C 182 196, 148 214, 110 214 C 70 214, 38 196, 36 152 Z"/>
+  <ellipse class="pink" cx="66" cy="168" rx="15" ry="10" opacity=".85"/><ellipse class="pink" cx="156" cy="168" rx="15" ry="10" opacity=".85"/>
+  <ellipse class="pink" cx="128" cy="112" rx="9" ry="6" opacity=".6"/>
+  <g class="eyes"><ellipse class="eye blink" cx="88" cy="150" rx="6.5" ry="8"/><ellipse class="eye blink" cx="134" cy="150" rx="6.5" ry="8"/></g>
+  <path class="ln" style="stroke-width:5" d="M102 166 q 5 6 9 0 q 4 6 9 0"/>
+  <ellipse class="body" cx="74" cy="214" rx="20" ry="13"/><ellipse class="body" cx="146" cy="214" rx="20" ry="13"/>
+  <g class="acc g-glasses"><circle cx="88" cy="150" r="20" fill="none" stroke="#3B2420" stroke-width="6"/><circle cx="134" cy="150" r="20" fill="none" stroke="#3B2420" stroke-width="6"/><path class="ln" style="stroke-width:6" d="M108 148 h6 M68 146 l-24 -6 M154 146 l22 -8"/></g>
+  <g class="acc g-phones"><path d="M40 140 C 40 70, 180 70, 180 140" fill="none" stroke="#3B2420" stroke-width="16" stroke-linecap="round"/><path d="M40 140 C 40 70, 180 70, 180 140" fill="none" stroke="#AFD6EE" stroke-width="8" stroke-linecap="round"/><rect x="22" y="128" width="30" height="46" rx="14" fill="#AFD6EE" stroke="#3B2420" stroke-width="6"/><rect x="168" y="128" width="30" height="46" rx="14" fill="#AFD6EE" stroke="#3B2420" stroke-width="6"/></g>
+  <g class="acc g-phone"><path d="M40 120 q -26 40 6 80" fill="none" stroke="#3B2420" stroke-width="5"/><rect x="18" y="112" width="30" height="64" rx="14" transform="rotate(-12 33 144)" fill="#F5B7BC" stroke="#3B2420" stroke-width="6"/><path d="M30 186 c -10 6 -4 16 4 10 c 8 -6 -2 -14 -8 -4 c -6 10 6 16 10 8" fill="none" stroke="#3B2420" stroke-width="4"/></g>
+  <g class="acc g-mug"><rect x="92" y="186" width="44" height="40" rx="8" fill="#8B5A4E" stroke="#3B2420" stroke-width="6"/><path d="M136 196 h8 a8 8 0 0 1 0 18 h-8" fill="none" stroke="#3B2420" stroke-width="6"/><path class="ln" style="stroke-width:4;opacity:.6" d="M104 178 q 4 -8 0 -14 M118 178 q 4 -8 0 -14"/></g>
+ </g></svg>`;
+}
+const STAR_D="M50 0 C 54 34, 66 46, 100 50 C 66 54, 54 66, 50 100 C 46 66, 34 54, 0 50 C 34 46, 46 34, 50 0Z";
+function star(kind){
+ if(kind==="ht"){const id="ht"+Math.random().toString(36).slice(2,7);
+  return `<svg viewBox="0 0 100 100"><defs><pattern id="${id}" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="2.4" fill="#3B2420"/></pattern></defs><path d="${STAR_D}" fill="url(#${id})"/></svg>`;}
+ const fill = kind==="white" ? "#FFFDF8" : kind==="sky" ? "#AFD6EE" : "#DB5F63";
+ return `<svg viewBox="0 0 100 100"><path d="${STAR_D}" fill="${fill}" stroke="#3B2420" stroke-width="5" stroke-linejoin="round"/></svg>`;
+}
+const ICONS={
+ ear:'<path d="M14 34c0-12 8-22 18-22s18 8 18 18c0 8-6 10-8 16s-4 10-10 10" /><path d="M24 30c0-5 4-8 8-8s8 4 8 8"/>',
+ map:'<path d="M8 14l14-6 20 8 14-6v40l-14 6-20-8-14 6z"/><path d="M22 8v40M42 16v40"/>',
+ pen:'<path d="M40 10l14 14-30 30H10V40z"/><path d="M34 16l14 14"/>',
+ mega:'<path d="M8 26v12h10l22 12V14L18 26z"/><path d="M48 24c4 3 4 13 0 16M18 38l4 14h8l-3-12"/>',
+ chart:'<path d="M8 54h48"/><rect x="12" y="34" width="9" height="20"/><rect x="27" y="22" width="9" height="32"/><rect x="42" y="12" width="9" height="42"/>'};
+const icon=k=>`<svg class="ic" viewBox="0 0 64 64" fill="#F7C3C3" stroke="#3B2420" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">${ICONS[k]}</svg>`;
+
+/* wobble filter shared */
+const defs=document.createElementNS("http://www.w3.org/2000/svg","svg");
+defs.setAttribute("width","0");defs.setAttribute("height","0");defs.style.position="absolute";
+defs.innerHTML=`<filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2">${RM?"":'<animate attributeName="seed" values="1;2;3;4" dur=".6s" repeatCount="indefinite" calcMode="discrete"/>'}</feTurbulence><feDisplacementMap in="SourceGraphic" scale="4"/></filter>`;
+document.body.prepend(defs);
+
+$$("[data-bun]").forEach(el=>{el.innerHTML=bunny(el.dataset.bun); const g=el.querySelector(".wob"); g.setAttribute("filter","url(#wobble)");});
+$$("[data-star]").forEach(el=>el.innerHTML=star(el.dataset.star));
+
+/* clouds */
+(function(){const g=$("#cloudG");const cols=["#AFD6EE","#F7C3C3","#FFFDF8","#F8DE8A"];let s="";
+ for(let row=0;row<3;row++){for(let x=-40;x<1260;x+=70+((x*7)%40)){const r=38+((x*13+row*29)%30);s+=`<circle cx="${x}" cy="${100-row*16+((x*3)%14)}" r="${r}" fill="${cols[(row+((x/70)|0))%4]}" stroke="#3B2420" stroke-width="2.5" opacity="${row===2?1:.95}"/>`}}
+ g.innerHTML=s;})();
+
+/* ---------------- language ---------------- */
+let L = store.get("gm-lang") || ((navigator.language||"pt").toLowerCase().startsWith("pt")?"pt":"en");
+const tx=(o)=> typeof o==="string"?o:(o?.[L]??o?.pt??"");
+
+function applyLang(){
+ document.documentElement.lang = L==="pt"?"pt-BR":"en";
+ $$("[data-i18n]").forEach(el=>{const v=T[L][el.dataset.i18n]; if(typeof v==="string") el.textContent=v;});
+ $$("[data-i18n-html]").forEach(el=>{const v=T[L][el.dataset.i18nHtml]; if(typeof v==="string") el.innerHTML=v;});
+ $$(".lang button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===L)));
+ const me=$(".me"); me.alt = L==="pt"?"Foto de Gabriella Moreira Martins":me.dataset.altEn;
+ $("#facts").innerHTML=T[L].facts.map(f=>`<li>${star("pink").replace("<svg","<svg width='18' height='18'")}<span>${f}</span></li>`).join("");
+ $("#stats").innerHTML=T[L].stats.map(([n,l])=>`<div class="stat"><b data-count="${n}">${n}</b><span>${l}</span></div>`).join("");
+ buildMarquee(); buildRot(); buildTracks(); buildFilters(); buildGrid(); buildSteps(); buildTL(); updateBest();
+ $("#vside").textContent=T[L].side;
+ countUps();
+}
+$$(".lang button").forEach(b=>b.addEventListener("click",()=>{L=b.dataset.lang;store.set("gm-lang",L);applyLang();}));
+
+function buildMarquee(){
+ const mk=(arr,k)=>{const one=arr.map(w=>`<span>${w}${star(k)}</span>`).join("");return one+one;};
+ $('[data-marquee="m1"]').innerHTML=mk(T[L].m1,"pink");
+ $('[data-marquee="m2"]').innerHTML=mk(T[L].m2,"white");
+}
+
+/* rotating words */
+let rotTimer;
+function buildRot(){
+ const r=$("#rot"); r.innerHTML=T[L].rot.map((w,i)=>`<span class="${i===0?"on":""}">${w}</span>`).join("");
+ clearInterval(rotTimer); let i=0; const sp=$$("span",r);
+ if(RM) return;
+ rotTimer=setInterval(()=>{sp[i].className="out";const prev=sp[i];setTimeout(()=>{prev.className=""},450);i=(i+1)%sp.length;sp[i].className="on";},2200);
+}
+
+/* split hero letters */
+$$("[data-split]").forEach((el,li)=>{const t=el.textContent;el.innerHTML=[...t].map((c,i)=>`<span class="ch" style="animation-delay:${1.0+li*.25+i*.05}s">${c}</span>`).join("");el.setAttribute("aria-hidden","true");});
+
+/* ---------------- playlist ---------------- */
+let cur=-1, actx;
+function blip(i){
+ try{actx=actx||new (window.AudioContext||window.webkitAudioContext)();const notes=[523.25,587.33,659.25,783.99,880];
+  const o=actx.createOscillator(),g=actx.createGain();o.type="triangle";o.frequency.value=notes[i%5];
+  g.gain.setValueAtTime(.0001,actx.currentTime);g.gain.exponentialRampToValueAtTime(.08,actx.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,actx.currentTime+.35);
+  o.connect(g).connect(actx.destination);o.start();o.stop(actx.currentTime+.4);}catch(e){}
+}
+function buildTracks(){
+ $("#tracks").innerHTML=SKILLS.map((s,i)=>`<li><button type="button" id="trk-${i}" data-i="${i}" aria-pressed="${i===cur}"><span class="no">${String(i+1).padStart(2,"0")}</span><span>${tx(s.t)}<span class="eq"><i></i><i></i><i></i></span></span><span class="du">${s.du}</span></button></li>`).join("");
+ $$("#tracks button").forEach(b=>b.addEventListener("click",()=>play(+b.dataset.i,true)));
+ renderLiner();
+}
+function renderLiner(){
+ const ln=$("#liner");
+ if(cur<0){ln.innerHTML=`<p class="hand" style="font-size:1.4rem">${T[L].skillsPick}</p>`;$("#vtitle").textContent="Gabi.rp";return;}
+ const s=SKILLS[cur]; ln.innerHTML=`<p><b>${String(cur+1).padStart(2,"0")} · ${tx(s.t)}</b></p><p style="margin-top:6px">${tx(s.d)}</p><div class="tags">${s.tags.map(t=>`<span>${t}</span>`).join("")}</div>`;
+ $("#vtitle").textContent=tx(s.t);
+}
+function play(i,sound){
+ cur=(cur===i&&sound)?-1:i;
+ $$("#tracks button").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.i===cur)));
+ $("#vinyl").classList.toggle("playing",cur>=0); $("#arm").classList.toggle("on",cur>=0);
+ renderLiner(); if(sound&&cur>=0) blip(i);
+}
+
+/* ---------------- work ---------------- */
+let filt="all";
+function buildFilters(){
+ $("#filters").innerHTML=FILTERS.map(([k,l])=>`<button type="button" id="f-${k}" data-f="${k}" aria-pressed="${k===filt}">${tx(l)}</button>`).join("");
+ $$("#filters button").forEach(b=>b.addEventListener("click",()=>{filt=b.dataset.f;$$("#filters button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));applyFilter();}));
+}
+function buildGrid(){
+ $("#grid").innerHTML=PROJECTS.map(p=>{
+  const cov=p.img?`<img src="${p.img}" alt="" loading="lazy">`:`<div class="big">${p.cover.big}<small>${tx(p.cover.small)}</small></div>`;
+  return `<button type="button" class="card" data-id="${p.id}" data-cats="${p.cats.join(" ")}" aria-label="${T[L].open}: ${tx(p.t)}">
+   <div class="stamp"><div class="stamp-in"><div class="cover" style="background:${p.color||"var(--paper-2)"}">${cov}</div>
+   <div class="meta"><div class="row"><span class="tag">${tx(p.tag)}</span></div><h3>${tx(p.t)}</h3><p>${tx(p.short)}</p></div></div></div>
+   <span class="open-hint"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></button>`}).join("");
+ $$("#grid .card").forEach(c=>c.addEventListener("click",()=>openModal(c.dataset.id)));
+ applyFilter(false);
+}
+function applyFilter(anim=true){
+ $$("#grid .card").forEach((c,i)=>{const show=filt==="all"||c.dataset.cats.split(" ").includes(filt);c.classList.toggle("hide",!show);
+  if(show&&anim&&!RM){c.animate([{transform:"scale(.7) rotate(-6deg)"},{transform:getComputedStyle(c).transform}],{duration:450,easing:"cubic-bezier(.3,1.6,.5,1)",delay:i*40,fill:"backwards"});}});
+}
+const modal=$("#modal");
+function openModal(id){
+ const p=PROJECTS.find(x=>x.id===id);
+ $("#mTitle").textContent=tx(p.t); $("#mSub").textContent=tx(p.sub);
+ let h="";
+ if(p.stat) h+=`<div class="m-stat"><b>${p.stat[0]}</b><span>${tx(p.stat[1])}</span></div>`;
+ h+=`<ul>${tx(p.b).map(x=>`<li>${x}</li>`).join("")}</ul>`;
+ if(p.gallery) h+=`<div class="gallery">${p.gallery.map(([s,c])=>`<figure><img src="${s}" alt="${tx(c)}" loading="lazy"><figcaption>${tx(c)}</figcaption></figure>`).join("")}</div>`;
+ if(p.links) h+=`<div class="m-links">${p.links.map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${tx(l)} ↗</a>`).join("")}</div>`;
+ $("#mBody").innerHTML=h; modal.showModal(); burst(innerWidth/2,innerHeight/2,14);
+}
+$("#mClose").addEventListener("click",()=>modal.close());
+modal.addEventListener("click",e=>{if(e.target===modal)modal.close();});
+
+/* ---------------- steps & timeline ---------------- */
+function buildSteps(){
+ $("#steps").innerHTML=STEPS.map((s,i)=>`<div class="step pop">${icon(s.i)}<span class="n mono">${String(i+1).padStart(2,"0")} / 05</span><h3>${tx(s.t)}</h3><p>${tx(s.d)}</p></div>`).join("");
+ observePops();
+}
+function buildTL(){
+ const tl=$("#tl"); $$(".ticket",tl).forEach(t=>t.remove());
+ TL.forEach(e=>{
+  let bl=e.b?tx(e.b):null; if(bl&&e.slice) bl=e.slice.map(i=>bl[i]);
+  const div=document.createElement("article"); div.className="ticket pop"+(e.k==="edu"?" edu":"");
+  div.innerHTML=`<div class="tm"><h3>${tx(e.org)}</h3><span class="role">${tx(e.role)}</span><span class="where">${tx(e.where)}</span>
+   ${bl?`<details><summary>${T[L].more}</summary><ul>${bl.map(x=>`<li>${x}</li>`).join("")}</ul></details>`:""}</div>
+   <div class="stub"><span class="mono">${e.k==="edu"?(L==="pt"?"formação":"education"):(L==="pt"?"experiência":"experience")}</span><b>${tx(e.when)}</b></div>`;
+  tl.appendChild(div);
+ });
+ observePops();
+}
+
+/* ---------------- count-ups ---------------- */
+function countUps(){
+ $$("[data-count]").forEach(el=>{
+  const raw=el.dataset.count, m=raw.match(/^(\d+)(.*)$/); if(!m||RM) return;
+  const end=+m[1], suf=m[2]; let started=false;
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting&&!started){started=true;io.disconnect();
+   const t0=performance.now(),d=1200;const step=t=>{const k=Math.min(1,(t-t0)/d),v=Math.round(end*(1-Math.pow(1-k,3)));el.textContent=v+suf;if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step);}})},{threshold:.6});
+  io.observe(el);
+ });
+}
+
+/* ---------------- reveal (from visible state) ---------------- */
+let popIO;
+function observePops(){
+ if(RM||!("IntersectionObserver" in window)) return;
+ popIO=popIO||new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.remove("pre");popIO.unobserve(en.target);}}),{threshold:.12});
+ $$(".pop:not([data-o])").forEach(el=>{el.dataset.o=1;const r=el.getBoundingClientRect();if(r.top>innerHeight){el.classList.add("pre");popIO.observe(el);}});
+}
+
+/* ---------------- ID card ---------------- */
+$("#idcard").addEventListener("click",function(){this.classList.toggle("flip");});
+
+/* ---------------- lamp / theme ---------------- */
+const root=document.documentElement;
+const savedTheme=store.get("gm-theme"); if(savedTheme) root.dataset.theme=savedTheme;
+$("#lamp").addEventListener("click",()=>{
+ const dark = root.dataset.theme ? root.dataset.theme==="dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+ root.dataset.theme = dark?"light":"dark"; store.set("gm-theme",root.dataset.theme);
+ toast(root.dataset.theme==="dark"?(L==="pt"?"luzes apagadas ☾":"lights off ☾"):(L==="pt"?"luzes acesas ☀":"lights on ☀"));
+});
+
+/* ---------------- burger ---------------- */
+$("#burger").addEventListener("click",function(){const o=$("#links").classList.toggle("open");this.setAttribute("aria-expanded",String(o));});
+$$("#links a").forEach(a=>a.addEventListener("click",()=>{$("#links").classList.remove("open");$("#burger").setAttribute("aria-expanded","false");}));
+
+/* ---------------- draggable stickers ---------------- */
+$$("[data-drag]").forEach(el=>{
+ let sx,sy,ox=0,oy=0,base=getComputedStyle(el).transform;
+ el.addEventListener("pointerdown",e=>{el.setPointerCapture(e.pointerId);sx=e.clientX-ox;sy=e.clientY-oy;el.style.zIndex=9;
+  const mv=ev=>{ox=ev.clientX-sx;oy=ev.clientY-sy;el.style.transform=`translate(${ox}px,${oy}px) rotate(${ox/12}deg) scale(1.08)`;};
+  const up=()=>{el.style.transform=`translate(${ox}px,${oy}px) rotate(${ox/20}deg)`;el.removeEventListener("pointermove",mv);el.removeEventListener("pointerup",up);burst(e.clientX,e.clientY,4);};
+  el.addEventListener("pointermove",mv);el.addEventListener("pointerup",up);});
+});
+
+/* ---------------- eyes follow cursor ---------------- */
+let mx=innerWidth/2,my=innerHeight/2;
+addEventListener("pointermove",e=>{mx=e.clientX;my=e.clientY;},{passive:true});
+function eyes(){
+ $$(".bun .eyes").forEach(g=>{const r=g.ownerSVGElement.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
+  const cx=r.left+r.width/2,cy=r.top+r.height*.62,a=Math.atan2(my-cy,mx-cx),d=Math.min(1,Math.hypot(mx-cx,my-cy)/300);
+  g.setAttribute("transform",`translate(${Math.cos(a)*5*d} ${Math.sin(a)*4*d})`);});
+}
+
+/* ---------------- cursor + sparkles ---------------- */
+const cur$=$("#cursor"); let last=0;
+const fine=matchMedia("(pointer:fine)").matches;
+if(fine&&!RM){
+ addEventListener("pointermove",e=>{cur$.style.left=e.clientX+"px";cur$.style.top=e.clientY+"px";
+  const now=performance.now(); if(now-last>55){last=now;spark(e.clientX,e.clientY);}},{passive:true});
+ document.addEventListener("pointerover",e=>{cur$.classList.toggle("big",!!e.target.closest("a,button,[data-drag],.card"));});
+}else cur$.style.display="none";
+const SPK=["#EE8582","#AFD6EE","#F8DE8A","#BFE3B0"];
+function spark(x,y,spread=18){
+ const s=document.createElement("div");s.className="spark";s.style.left=(x-7)+"px";s.style.top=(y-7)+"px";
+ s.style.setProperty("--dx",(Math.random()-.5)*spread*2+"px");s.style.setProperty("--dy",(Math.random()*spread+6)+"px");
+ s.innerHTML=`<svg viewBox="0 0 100 100" width="14" height="14"><path d="${STAR_D}" fill="${SPK[(Math.random()*4)|0]}" stroke="#3B2420" stroke-width="6"/></svg>`;
+ document.body.appendChild(s); setTimeout(()=>s.remove(),720);
+}
+function burst(x,y,n=10){if(RM)return;for(let i=0;i<n;i++)spark(x,y,60);}
+
+/* ---------------- parallax + timeline progress ---------------- */
+const pz=$("#photoZone");
+function frame(){
+ eyes();
+ if(!RM){const r=pz.getBoundingClientRect();const dx=(mx/innerWidth-.5),dy=(my/innerHeight-.5);
+  $(".blob").style.translate=`${dx*-14}px ${dy*-10}px`; $(".me").style.translate=`${dx*10}px ${dy*6}px`;}
+ const tl=$("#tl"),r=tl.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.6-r.top)/r.height));
+ $("#tlFill").style.height=(p*100)+"%"; $("#rider").style.top=(p*100)+"%";
+ requestAnimationFrame(frame);
+}
+
+/* ---------------- game ---------------- */
+let score=0,timeLeft=15,gameOn=false,spawnT,tickT;
+const arena=$("#arena");
+function updateBest(){const b=+store.get("gm-best")||0;$("#best").textContent=b?T[L].best(b):"";}
+function startGame(){
+ score=0;timeLeft=15;gameOn=true;$("#arenaCenter").hidden=true;$("#hudScore").textContent="0 ✦";$("#hudTime").textContent="15s";
+ const spawn=()=>{if(!gameOn)return;const b=document.createElement("button");b.type="button";b.className="target";b.setAttribute("aria-label","ideia");
+  b.style.left=(10+Math.random()*80)+"%";b.style.top=(18+Math.random()*72)+"%";b.innerHTML=star(["pink","sky","white","ht"][(Math.random()*4)|0]);
+  b.addEventListener("pointerdown",e=>{if(b.classList.contains("hit"))return;b.classList.add("hit");score++;$("#hudScore").textContent=score+" ✦";
+   const pl=document.createElement("span");pl.className="plus";pl.textContent="+1";pl.style.left=b.style.left;pl.style.top=b.style.top;arena.appendChild(pl);setTimeout(()=>pl.remove(),800);
+   blip(score);setTimeout(()=>b.remove(),350);});
+  arena.appendChild(b);setTimeout(()=>{if(!b.classList.contains("hit"))b.remove()},Math.max(650,1300-score*25));
+  spawnT=setTimeout(spawn,Math.max(380,720-score*12));};
+ spawn();
+ tickT=setInterval(()=>{timeLeft--;$("#hudTime").textContent=timeLeft+"s";if(timeLeft<=0)endGame();},1000);
+}
+function endGame(){
+ gameOn=false;clearInterval(tickT);clearTimeout(spawnT);$$(".target",arena).forEach(t=>t.remove());
+ const b=+store.get("gm-best")||0;if(score>b)store.set("gm-best",score);updateBest();
+ $("#gMsg").textContent=T[L].gameEnd(score);$("#gStart").textContent=T[L]["game.again"];$("#arenaCenter").hidden=false;
+ const r=arena.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,score>=10?24:8);
+}
+$("#gStart").addEventListener("click",startGame);
+
+/* ---------------- envelope ---------------- */
+$("#env").addEventListener("click",function(){this.classList.toggle("open");if(this.classList.contains("open")){const r=this.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height*.4,12);}});
+
+/* ---------------- copy ---------------- */
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove("show"),1800);}
+$$("[data-copy]").forEach(b=>b.addEventListener("click",e=>{
+ const v=b.dataset.copy;
+ const fb=()=>{const el=b.parentElement.querySelector("b");const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);toast(T[L].copyFail);};
+ try{navigator.clipboard.writeText(v).then(()=>{toast(T[L].copied);burst(e.clientX,e.clientY,8);},fb);}catch(err){fb();}
+}));
+
+/* ---------------- loader ---------------- */
+function hideLoader(){$("#loader").classList.add("done");setTimeout(()=>$("#loader").remove(),900);}
+if(RM){hideLoader();}else{let n=0;const lc=$("#lc");const it=setInterval(()=>{n=Math.min(100,n+7+((Math.random()*9)|0));lc.textContent=n;if(n>=100){clearInterval(it);setTimeout(hideLoader,180);}},55);}
+
+applyLang();
+requestAnimationFrame(frame);
+})();
+</script>
+
+</body></html>
